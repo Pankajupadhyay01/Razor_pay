@@ -15,6 +15,7 @@ app.get("/api/getkey", (req, res) =>
 );
 
 app.use("/api", router)
+
 if (process.env.NODE_ENV !== "production") {
     dotenv.config({ path: ".env" });
 }
