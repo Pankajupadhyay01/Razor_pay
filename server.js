@@ -5,7 +5,7 @@ import { dbConn } from "./config/db/dbconn.js";
 
 dbConn()
 
-console.log(process.env.RAZORPAY_API_KEY);
+console.log(process.env.PORT);
 
 export const instance = new Razorpay({
     key_id: process.env.RAZORPAY_API_KEY,
