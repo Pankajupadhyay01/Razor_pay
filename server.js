@@ -1,10 +1,9 @@
-import dotenv from 'dotenv'
+
 import app from "./app.js";
 import Razorpay from "razorpay";
 import { dbConn } from "./config/db/dbconn.js";
 dbConn()
-dotenv.config({ path: ".env" }); // Load environment variables
-
+ 
 
 export const instance = new Razorpay({
     key_id: process.env.RAZORPAY_API_KEY,
