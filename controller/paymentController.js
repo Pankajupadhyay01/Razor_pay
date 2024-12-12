@@ -15,7 +15,7 @@ export const Checkout = async (req, res) => {
 
         const orders = await instance.orders.create(options);
 
-        res.status(200).json({
+        return res.status(200).json({
             success: true,
             orders
         });
