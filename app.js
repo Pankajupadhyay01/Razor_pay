@@ -13,9 +13,6 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/api/getkey", (req, res) =>
     res.status(200).json({ key: process.env.RAZORPAY_API_KEY })
 );
-app.get("/api/test", (req, res) =>
-    res.status(200).json({ sucess: true, msg: "okok" })
-);
 
 app.use("/api", router)
 
